@@ -4,8 +4,7 @@ jobs:
   greet:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-	uses: actions/checkout@v4
+      - uses: actions/checkout@v4
       - name: write greeting to txt file 
 	run: echo 'hello world!' > greeting.txt
       - name: check that txt file is there
